@@ -1,5 +1,6 @@
 "use client";
 import Scrollar from "./scrollar";
+import ArtificialRevolver from "./artificialrevolver";
 import Revolver from "./revolver";
 
 export default function Parent(){
@@ -14,6 +15,7 @@ export default function Parent(){
         <Scrollar indexchange={(index) => IndexChange(index)}/>
       </div>
 
+      <ArtificialRevolver state={1}/>
       <Revolver />
   </div>)
 }
