@@ -1,11 +1,15 @@
 "use client";
+import React,{useState} from "react";
 import Scrollar from "./scrollar";
 import ArtificialRevolver from "./artificialrevolver";
 import Revolver from "./revolver";
 
 export default function Parent(){
 
+  const [indexstate, setindexstate] = useState(0);
+
   function IndexChange(index: number){
+    setindexstate(index);
     console.log("Item no: ",index+1);
   }
 
@@ -15,7 +19,7 @@ export default function Parent(){
         <Scrollar indexchange={(index) => IndexChange(index)}/>
       </div>
 
-      <ArtificialRevolver state={1}/>
-      <Revolver activeindex={1} />
+      <ArtificialRevolver state={indexstate}/>
+      <Revolver activeindex={indexstate} />
   </div>)
 }

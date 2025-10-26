@@ -47,6 +47,14 @@ export default function Scrollar({indexchange}:{indexchange: (index:number) => v
             setscrolldistance(prev => prev-136);       
             indexchange(activeindex.current);   
         }
+        else{
+             const button = e.currentTarget;
+            button.disabled = true;
+            setTimeout(() => {button.disabled = false},1000);
+            activeindex.current = 0;
+            setscrolldistance(prev => 0);       
+            indexchange(activeindex.current);           
+        }
     }
 
 
