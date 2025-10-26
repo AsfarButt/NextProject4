@@ -16,6 +16,6 @@ export default function Parent(){
       </div>
 
       <ArtificialRevolver state={1}/>
-      <Revolver />
+      <Revolver activeindex={1} />
   </div>)
 }
