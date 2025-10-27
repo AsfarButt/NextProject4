@@ -19,7 +19,9 @@ export default function Parent(){
         <Scrollar indexchange={(index) => IndexChange(index)}/>
       </div>
 
-      <ArtificialRevolver state={indexstate}/>
-      <Revolver activeindex={indexstate} />
+      <div className="relative w-150 h-150 left-[15%] top-[5%]">
+        <ArtificialRevolver state={indexstate}/>
+        <Revolver activeindex={indexstate} />
+      </div>
   </div>)
 }
