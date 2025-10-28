@@ -5,7 +5,7 @@ import React,{useEffect, useRef, useState} from "react";
 type imagesref = {
     active?: boolean
 }
-export default function Scrollar({indexchange}:{indexchange: (index:number) => void}){
+export default function Scrollar({indexchange, sidechange}:{indexchange: (index:number) => void, sidechange: (side: string) => void}){
 
     const [SmallImages, setSmallImages] = useState<string[]>([]);
     const carosoul = useRef<HTMLDivElement | null>(null);
@@ -36,6 +36,7 @@ export default function Scrollar({indexchange}:{indexchange: (index:number) => v
             activeindex.current -= 1;
             setscrolldistance(prev => prev+136);
             indexchange(activeindex.current);
+            sidechange("left");
         }
     }
     function RightClick(e: React.MouseEvent<HTMLButtonElement>){
@@ -46,6 +47,7 @@ export default function Scrollar({indexchange}:{indexchange: (index:number) => v
             activeindex.current += 1;
             setscrolldistance(prev => prev-136);       
             indexchange(activeindex.current);   
+            sidechange("right");
         }
         else{
              const button = e.currentTarget;
@@ -53,7 +55,8 @@ export default function Scrollar({indexchange}:{indexchange: (index:number) => v
             setTimeout(() => {button.disabled = false},1000);
             activeindex.current = 0;
             setscrolldistance(prev => 0);       
-            indexchange(activeindex.current);           
+            indexchange(activeindex.current);   
+            sidechange("right");        
         }
     }
 
