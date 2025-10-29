@@ -80,16 +80,16 @@ export default function Revolver({activeindex}:{activeindex: number}){
 //    useEffect(() => {console.log(showindex)},[showindex]);
 
 
-    return(<div className="relative w-full h-full transition-transform duration-1400 ease-in-out rotate-225" style={{transform: `rotateZ(${rotate}deg)`}}>
+    return(<div className="relative w-full h-full transition-transform duration-1600 rotate-230" style={{transform: `rotateZ(${rotate}deg)`}}>
        
 
         {Dishes.map((element, index) => (
-            <div className="absolute left-[50%] w-[50%] h-[50%] origin-bottom-left transition-all duration-1200 ease-in-out opacity-0"
+            <div className="absolute left-[50%] w-[50%] h-[50%] origin-bottom-left transition-all duration-1200 ease-out opacity-0"
              style={{opacity: showindex[index], transform: `rotateZ(${(index+1)*(-90)}deg)`}}
               key={index}> 
-                <div className="relative w-full h-auto max-w-85 left-[15%] bottom-[15%] flex justify-center items-center">
+                <div className="relative w-full h-auto max-w-110 left-[10%] bottom-[10%] flex justify-center items-center">
                     <img src={element} alt={"Dish"+index+1} className="relative w-full h-full"/>
-                    <div className="absolute w-[60%] h-[60%] rounded-full shadow-2xl shadow-black -z-1" /> 
+                    <div className="absolute w-[60%] h-[60%] rounded-full [box-shadow:20px_20px_120px_black] -z-1" /> 
                     {/* <div className="relative font-bold text-2xl bg-white">{element}</div> */}
                 </div>
             </div>
