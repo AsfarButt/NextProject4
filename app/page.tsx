@@ -5,6 +5,8 @@ import ArtificialRevolver from "./artificialrevolver";
 import Revolver from "./revolver";
 import Description from "./description";
 import Text from "./text";
+import Additionals from "./additionals";
+import About from "./about";
 
 export default function Parent(){
 
@@ -32,12 +34,20 @@ export default function Parent(){
         <Revolver activeindex={indexstate} />
       </div>
 
-      <div className="absolute right-5 top-100 w-auto h-auto ">
+      <div className="absolute right-[5%] top-100 w-auto h-auto scale-[110%]">
         <Description activeindex={indexstate}/>
       </div>
 
-      <div className="absolute top-[20%] left-140 w-60 h-30">
+      <div className="absolute top-[30%] left-160 w-110 h-50">
         <Text activeindex={indexstate}/>
+      </div>
+
+      <div className="absolute top-[5%] right-[5%] " >
+          <Additionals />
+      </div>
+
+      <div className="absolute top-[6%] left-[50%] -translate-x-[50%] w-[60%] max-w-[500] rounded-2xl py-2 backdrop-blur-sm h-fit shadow-sm shadow-black/10">
+        <About />
       </div>
   </div>)
 }

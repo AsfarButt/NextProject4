@@ -66,12 +66,12 @@ export default function Scrollar({indexchange, sidechange}:{indexchange: (index:
                 <div className="relative w-full h-full mask-[linear-gradient(to_right,rgba(0,0,0,0)_0%,rgba(0,0,0,1)_8%,rgba(0,0,0,1)_92%,rgba(0,0,0,0)_100%)] bg-cover">
                     {/* Scrollar */}
                     <div className="absolute left-[20%] ml-1 top-2 w-24 h-26 rounded-3xl bg-white shadow-sm shadow-black/40" />
-                    <div className={`relative left-[20%] w-26 h-full py-2 flex flex-row border-box transition-all duration-1200`} style={{transform: `translateX(${scrolldistance}px)`}} ref={carosoul}>
+                    <div className={`relative left-[20%] w-26 h-full py-2 flex flex-row border-box transition-all duration-1600`} style={{transform: `translateX(${scrolldistance}px)`}} ref={carosoul}>
                         {SmallImages.map((element, index) => (
-                            <div className="relative flex-none flex flex-col items-center w-26 h-full mr-8 rounded-2xl" key={index}>
+                            <div className="relative flex-none flex flex-col items-center w-26 h-full mr-8 rounded-2xl text-center" key={index}>
                                 <img src={element[0]} alt={SmallImages[index]} className="w-[80%] h-auto" />
                                 <div className="absolute top-[12%] -z-1 w-[50%] h-[50%] rounded-full shadow-xl shadow-black/80" />
-                                <h2 className="absolute bottom-4 text-[10px] text-gray-900/80 font-semibold">{element[1]}</h2></div>))}
+                                <h2 className="absolute bottom-2 text-[10px] w-[80%] overflow-hidden line-clamp-1 text-gray-900/80 font-semibold">{element[1]}</h2></div>))}
                             </div>
                 </div>
                 {/* Buttons */}

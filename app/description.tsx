@@ -46,23 +46,48 @@ export default function Description({activeindex}:{activeindex :number}){
         {activecolumn==1? 
                 (<><div className="text-xl font-semibold p-4"> 
             <div className={`${opacitystate} transition-all duration-250`}><div className={`text-4xl z-2 text-black transition-transform translate-y-0 duration-400 ease-out`} ref={headingref}>{Data[0]}</div></div>
-            <div className="absolute top-18 left-4 w-8 h-12 pt-2 rounded-lg text-center text-white text-4xl font-bold opacity-60" style={{backgroundColor: `${Data[3]}`}} >.</div>
+            <div className="absolute top-18 left-4 w-8 h-12 pt-2 rounded-lg text-center text-white text-4xl font-bold opacity-60" style={{backgroundColor: `${Data[4]}`}} >.</div>
             </div>
             
         <div className={`relative px-6 transition-all duration-400 ${opacitystate}`}>
             <h2 className="text-gray-900/90 text-lg">{Data[1]}</h2>
-            <p className="">{Data[2]}</p>
+            <p className="">{Data[2]}</p><br/>
+            <p className="">{Data[3]}</p>
         </div></>)
         :
         (<><div className="relative flex flex-col justify-start p-4 pl-10 border-box">
-            <li className="text-md text-gray-800/90 hover:text-gray-950/90">{Data[4]}</li>
-            <li className="text-md text-gray-800/90 hover:text-gray-950/90">{Data[5]}</li>
-            <li className="text-md text-gray-800/90 hover:text-gray-950/90">{Data[6]}</li>
-            <li className="text-md text-gray-800/90 hover:text-gray-950/90">{Data[7]}</li>
-            <li className="text-md text-gray-800/90 hover:text-gray-950/90">{Data[8]}</li>
-            <li className="text-md text-gray-800/90 hover:text-gray-950/90">{Data[9]}</li>
-            <li className="text-md text-gray-800/90 hover:text-gray-950/90">{Data[10]}</li>
-            <li className="text-md text-gray-800/90 hover:text-gray-950/90">{Data[11]}</li>
+            <div className="relative w-fit">
+            <li className="text-md text-gray-800/90 hover:text-gray-950/90 peer">{Data[5]}</li>
+            <hr className="absolute w-0 border-blue-950/90 transition-all duration-300 peer-hover:w-full" />
+            </div>
+            <div className="relative w-fit">
+            <li className="text-md text-gray-800/90 hover:text-gray-950/90 peer">{Data[6]}</li>
+            <hr className="absolute w-0 border-blue-950/90 transition-all duration-300 peer-hover:w-full" />
+            </div>
+            <div className="relative w-fit">
+            <li className="text-md text-gray-800/90 hover:text-gray-950/90 peer">{Data[7]}</li>
+            <hr className="absolute w-0 border-blue-950/90 transition-all duration-300 peer-hover:w-full" />
+            </div>
+            <div className="relative w-fit">
+            <li className="text-md text-gray-800/90 hover:text-gray-950/90 peer">{Data[8]}</li>
+            <hr className="absolute w-0 border-blue-950/90 transition-all duration-300 peer-hover:w-full" />
+            </div>
+            <div className="relative w-fit">
+            <li className="text-md text-gray-800/90 hover:text-gray-950/90 peer">{Data[12]}</li>
+            <hr className="absolute w-0 border-blue-950/90 transition-all duration-300 peer-hover:w-full" />
+            </div>
+            <div className="relative w-fit">
+            <li className="text-md text-gray-800/90 hover:text-gray-950/90 peer">{Data[9]}</li>
+            <hr className="absolute w-0 border-blue-950/90 transition-all duration-300 peer-hover:w-full" />
+            </div>
+            <div className="relative w-fit">
+            <li className="text-md text-gray-800/90 hover:text-gray-950/90 peer">{Data[10]}</li>
+            <hr className="absolute w-0 border-blue-950/90 transition-all duration-300 peer-hover:w-full" />
+            </div>
+            <div className="relative w-fit">
+            <li className="text-md text-gray-800/90 hover:text-gray-950/90 peer">{Data[11]}</li>
+            <hr className="absolute w-0 border-blue-950/90 transition-all duration-300 peer-hover:w-full" />
+            </div>
 
             <img src="/ingredientsimage.png" alt="Ingredients image" className="absolute w-26 h-26 top-6 right-8 brightness-150 opacity-60" />
             </div></>)

@@ -1,12 +1,11 @@
 [
-    ["/Dishes/smalldish1.png", "Chicken Soup"],
-    ["/Dishes/smalldish3.png", "Corn Soup"],
-    ["/Dishes/smalldish4.png", "Breakfast Cereal"],
-    ["/Dishes/smalldish5.png", "Rice Pudding"],
-    ["/Dishes/smalldish6.png", "Fruit Bowl"],
-
-    ["/Dishes/smalldish6.png", "Fruit Bowl"],
-    ["/Dishes/smalldish6.png", "Fruit Bowl"],
-    ["/Dishes/smalldish6.png", "Fruit Bowl"]
+    ["/SmallDishes/dish1-min.png", "Rotisserie Chicken"],
+    ["/SmallDishes/dish2-min.png", "Corn Soup"],
+    ["/SmallDishes/dish3-min.png", "Breakfast Cereal"],
+    ["/SmallDishes/dish4-min.png", "Caesar Salad"],
+    ["/SmallDishes/dish5-min.png", "RedVelvet Pancakes"],
+    ["/SmallDishes/dish6-min.png", "Rice Pudding"],
+    ["/SmallDishes/dish7-min.png", "T-Bone Steak"],
+    ["/SmallDishes/dish8-min.png", "Alfaredo Pasta"]
 
 ]

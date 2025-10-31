@@ -89,7 +89,7 @@ export default function Revolver({activeindex}:{activeindex: number}){
               key={index}> 
                 <div className="relative w-full h-auto max-w-110 left-[10%] bottom-[10%] flex justify-center items-center">
                     <img src={element} alt={"Dish"+index+1} className="relative w-full h-full"/>
-                    <div className="absolute w-[60%] h-[60%] rounded-full [box-shadow:20px_20px_120px_black] -z-1" /> 
+                    <div className="absolute w-[60%] h-[60%] rounded-full [box-shadow:40px_40px_120px_black] -z-1" /> 
                     {/* <div className="relative font-bold text-2xl bg-white">{element}</div> */}
                 </div>
             </div>
