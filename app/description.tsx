@@ -39,7 +39,7 @@ export default function Description({activeindex}:{activeindex :number}){
  
     return(<div className="relative w-80 h-110 rounded-2xl shadow-2xl shadow-black/60">       
     {/* start from here work you way up */}
-        <div className="relative flex justify-between mx-[15%] py-4">"
+        <div className="relative flex justify-between mx-[15%] py-4">
             <div className={`${(activecolumn==1)? "font-semibold":"font-regular"} text-black/95`} onClick={() => setactivecolumn(1)}>Overview</div>
             <div className={`${(activecolumn==2)?"font-semibold":"font-regular"} text-black/95`} onClick={() => setactivecolumn(2)}>Ingredients</div>
         </div>
