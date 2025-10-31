@@ -46,7 +46,7 @@ export default function Text({activeindex}:{activeindex: number}){
             <div className="w-full h-full translate-x-0 text-8xl font-regular transition-all duration-600" ref={tempref}><h1 className="h-full text-gray-800/90">{Name[0]}</h1></div></div>
 
             <div className="absolute top-[50%] left-0 w-full h-[50%] border-box overflow-hidden transition-all duration-600" ref={heading1ref}>
-            <div className="w-full h-full text-8xl font-bold"><h1 className="h-full">{Name[1]}</h1></div></div>
+            <div className="w-full h-full text-8xl font-bold"><h1 className="h-full text-black/95">{Name[1]}</h1></div></div>
     </div>)
 
 }

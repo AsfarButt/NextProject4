@@ -40,8 +40,8 @@ export default function Description({activeindex}:{activeindex :number}){
     return(<div className="relative w-80 h-110 rounded-2xl shadow-2xl shadow-black/60">       
     {/* start from here work you way up */}
         <div className="relative flex justify-between mx-[15%] py-4">
-            <div className={`${(activecolumn==1)? "font-semibold":"font-regular"}`} onClick={() => setactivecolumn(1)}>Overview</div>
-            <div className={`${(activecolumn==2)?"font-semibold":"font-regular"}`} onClick={() => setactivecolumn(2)}>Ingredients</div>
+            <div className={`${(activecolumn==1)? "font-semibold":"font-regular text-black/95"}`} onClick={() => setactivecolumn(1)}>Overview</div>
+            <div className={`${(activecolumn==2)?"font-semibold":"font-regular text-black/95"}`} onClick={() => setactivecolumn(2)}>Ingredients</div>
         </div>
         {activecolumn==1? 
                 (<><div className="text-xl font-semibold p-4"> 
@@ -51,11 +51,11 @@ export default function Description({activeindex}:{activeindex :number}){
             
         <div className={`relative px-6 transition-all duration-400 ${opacitystate}`}>
             <h2 className="text-gray-900/90 text-lg">{Data[1]}</h2>
-            <p className="">{Data[2]}</p><br/>
-            <p className="">{Data[3]}</p>
+            <p className="text-black/95">{Data[2]}</p><br/>
+            <p className="text-black/95">{Data[3]}</p>
         </div></>)
         :
-        (<><div className="relative flex flex-col justify-start p-4 pl-10 border-box">
+        (<><div className="relative flex flex-col justify-start p-4 pl-10 border-box text-black/95">
             <div className="relative w-fit">
             <li className="text-md text-gray-800/90 hover:text-gray-950/90 peer">{Data[5]}</li>
             <hr className="absolute w-0 border-blue-950/90 transition-all duration-300 peer-hover:w-full" />
