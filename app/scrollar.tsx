@@ -76,8 +76,8 @@ export default function Scrollar({indexchange, sidechange}:{indexchange: (index:
                 </div>
                 {/* Buttons */}
                 <div className="absolute top-0 w-full h-full flex justify-between items-center z-1 pointer-events-none">
-                        <button type="button" className="text-lg pointer-events-auto cursor-pointer" onClick={(e) => LeftClick(e)}>〈</button>
-                        <button type="button" className="text-lg pointer-events-auto cursor-pointer" onClick={(e) => RightClick(e)}>〉</button>
+                        <button type="button" className="text-lg pointer-events-auto cursor-pointer text-black" onClick={(e) => LeftClick(e)}>〈</button>
+                        <button type="button" className="text-lg pointer-events-auto cursor-pointer text-black" onClick={(e) => RightClick(e)}>〉</button>
                 </div>
     </div>)
 }
